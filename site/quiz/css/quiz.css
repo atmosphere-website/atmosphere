@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  background-position: center;
+  background-position: fixed;
+  background: radial-gradient(#223344, #112233) no-repeat center center fixed;
+  /*filter: blur(30px);*/
+}
+body h1 {
+  margin: 30px;
+  margin-top: 70px;
+  padding: 15px;
+  color: #33FFFF;
+  text-shadow: 10px 10px 2px black;
+}
+.quiz {
+  background-color: #334455;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 7px;
+  overflow: hidden;
+  margin: 30px;
+}
+.quiz h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  color: #BBFFFF;
+  text-shadow: 4px 4px 2px #222222;
+}
+.quiz #correct {
+  text-align: center;
+  font-size: 40px;
+  font-style: italic;
+  color: #00FF00;
+  font-weight: bold;
+  display: none;
+  text-shadow: 2px 2px 2px #333333;
+}
+.quiz #buttons {
+  float: center;
+  overflow: visible;
+  display: block;
+  width: 100%;
+}
+.quiz #buttons button {
+  margin: 4px;
+  padding: 20px;
+  width: 49%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  display: inline-block;
+  background-color: #449999;
+  color: #442222;
+  border-radius: 6px;
+  border-style: none;
+}
+.quiz #buttons button:hover {
+  animation: buttonHover ease 0.7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.quiz #answer {
+  align-items: center;
+  float: bottom;
+  display: none;
+  text-align: center;
+  font-size: 30px;
+  color: #FF4444;
+  text-shadow: 2px 2px 2px #333333;
+}
+@keyframes buttonHover {
+  0% {}
+  100% {
+    background-color: #77FFFF;
+    box-shadow: 7px 7px 3px #111111;
+  }
+}
+body a {
+  color: #44FFFF;
+  text-shadow: 4px 4px 3px #440000;
+  text-decoration: none;
+  font-size: 24px;
+}
+body a:hover {
+  animation: linkHover ease 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  text-decoration: underline;
+}
+@keyframes linkHover {
+  0% {}
+  100% {
+    background-color: #221133;
+    color: #BBBBFF;
+    border-radius: 3px;
+    padding: 2px;
+    text-shadow: none;
+  }
+}

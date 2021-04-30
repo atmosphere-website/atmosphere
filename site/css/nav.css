@@ -1,0 +1,49 @@
+/*nav bar format*/
+.nav {
+  top: 0;
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+  background-color: #556677;
+  overflow: visible;
+  box-shadow: 0px 4px 10px #111111;
+  border-bottom: 1px solid #44BBBB;
+  z-index: 9;
+}
+/*Sets position of main links in nav*/
+.nav a {
+  display: block;
+  float: left;
+  color: #AAFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav a:not(.active):hover {
+  animation: fadeInAnimation ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+@keyframes fadeInAnimation {
+  0% {
+  }
+  100% {
+    background-color: #44BBBB;
+    color: #FFFFFF;
+    text-shadow: 4px 4px 2px #111111;
+  }
+}
+
+.nav .credits {
+  float: right;
+  color: #5e2d2d;
+  padding: 14px 16px;
+  margin: 0px;
+  text-shadow: none;
+}
+/*Styles the active nav link*/
+.nav a.active {
+  background-color: #222222;
+}
