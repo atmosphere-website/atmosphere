@@ -1,0 +1,85 @@
+/*formats the background of website*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  background-position: center;
+  background-position: fixed;
+  background: radial-gradient(#223344, #112233) no-repeat center center fixed;
+  /*filter: blur(30px);*/
+}
+body h1 {
+  color: #00FFFF;
+  text-shadow: 14px 14px 5px #000000;
+  margin: 20px;
+  margin-top: 70px;
+}
+/*formats topics*/
+.topic {
+  margin: 30px;
+  background-image: linear-gradient(to right, #445599, #112233);
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 6px 6px 6px #000000;
+  overflow: hidden;
+}
+.topic h2 {
+  float: top;
+  color: #33BBBB;
+  text-shadow: 8px 8px 2px #000000;
+}
+.topic p {
+  float: left;
+  color: #FFFFFF;
+  text-shadow: 4px 4px 3px #000000;
+  max-width: 60%;
+}
+.topic a {
+  color: #44FFFF;
+  text-shadow: 4px 4px 3px #440000;
+  text-decoration: none;
+}
+.topic a:hover {
+  animation: linkHover ease 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  text-decoration: underline;
+}
+@keyframes linkHover {
+  0% {}
+  100% {
+    background-color: #221133;
+    color: #BBBBFF;
+    border-radius: 3px;
+    padding: 2px;
+    text-shadow: none;
+  }
+}
+/*Deals with images and stuffs*/
+.topic .image {
+  float: right;
+  display: block;
+}
+.topic .image img {
+  max-width: 500px;
+  display: block;
+  top: 0;
+  border-radius: 7px;
+  box-shadow: 4px 4px 3px black;
+}
+.topic .image p {
+  display: block;
+  float: bottom;
+  position: center;
+  text-align: center;
+  display: block;
+  font-size: 10px;
+  font-style: italic;
+  color: #888888;
+}
+iframe {
+  border-radius: 7px;
+  box-shadow: 4px 4px 3px #222222;
+  background-color: #444444;
+  filter: hue-rotate(290deg) brightness(1.3);
+}

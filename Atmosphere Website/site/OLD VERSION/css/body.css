@@ -1,0 +1,31 @@
+/*formats the background of website*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  background-position: center;
+  background: linear-gradient(to top, #111111, #333333) no-repeat center center fixed;
+}
+body h1 {
+  color: #FF0000;
+  text-shadow: 14px 14px 5px #000000;
+  margin: 20px;
+  margin-top: 70px;
+}
+/*formats topics*/
+.topic {
+  margin: 30px;
+  background-image: linear-gradient(to right, #993300, #332211);
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 6px 6px 6px #000000;
+}
+.topic h2 {
+  color: #33BBBB;
+  text-shadow: 4px 4px 2px #000000;
+}
+.topic p {
+  color: #FFFFFF;
+  text-shadow: 2px 2px 3px #444444;
+  max-width: 60%;
+}
